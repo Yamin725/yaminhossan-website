@@ -1,10 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Yamin's Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yamin Hossan</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8e7;
+      color: #222;
+    }
+
+    header {
+      background-color: #c49a6c;
+      display: flex;
+      flex-direction: column;
+      width: 100%%;
+      padding: 0;
+    }
+
+    .top-header {
+      display: flex;
+      align-items: center;
+      padding: 0.8rem 2rem;
+    }
+
+    .top-header img {
+      height: 45px;
+      margin-right: 1rem;
+    }
+
+    .top-header .site-name {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav {
+      background-color: #e4bd75;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.8rem 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: darkgoldenrod;
+    }
+
+    .hero {
+      padding-top: 7rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: goldenrod;
+      margin-bottom: 2rem;
+    }
+
+    .nasheed-box {
+      background-color: #ddd0ae;
+      padding: 1.5rem 2rem;
+      margin: 0 auto;
+      max-width: 400px;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background-color: #f1e6c5;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .top-header .site-name {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Yamin Hossan's Website!</h1>
-  <p>This is a placeholder file to initialize the GitHub repository.</p>
+
+  <header>
+    <div class="top-header">
+      <img src="assets/images/yamin-logo.png" alt="Yamin Logo">
+      <div class="site-name">Yamin Hossan</div>
+    </div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Home</a>
+      <a href="#">Nasheed</a>
+      <a href="#">Gallery</a>
+      <a href="#">Video</a>
+      <a href="#">Quran</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Welcome!</h1>
+    <div class="nasheed-box">
+      আমার নতুন নাশিদ এখানেই পাবেন
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Yamin Hossan. Designed by Asharah. All rights reserved.
+  </footer>
+
 </body>
 </html>
